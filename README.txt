@@ -1,0 +1,1 @@
+Olá, antes de executar o programa, por gentileza copiar a pasta db para a raiz do disco C: as credenciais que utilizei foram as credenciais padrão do firebird SYSDBA e masterkey

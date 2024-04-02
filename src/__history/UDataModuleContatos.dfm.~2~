@@ -1,0 +1,20 @@
+object DM: TDM
+  Height = 480
+  Width = 640
+  object ConexaoDB: TFDConnection
+    Params.Strings = (
+      'Database=C:\db\DB.FDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'DriverID=FB')
+    Connected = True
+    LoginPrompt = False
+    Left = 96
+    Top = 224
+  end
+  object qrySelect: TFDQuery
+    Connection = ConexaoDB
+    Left = 208
+    Top = 224
+  end
+end

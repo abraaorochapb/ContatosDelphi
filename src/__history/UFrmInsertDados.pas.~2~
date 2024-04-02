@@ -1,0 +1,46 @@
+unit UFrmInsertDados;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmInsertDados = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    Panel3: TPanel;
+    Panel4: TPanel;
+    Label1: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    edtID: TEdit;
+    edtNome: TEdit;
+    edtSobrenome: TEdit;
+    edtTelefone: TEdit;
+    edtEmail: TEdit;
+    Label2: TLabel;
+    btnSalvar: TButton;
+    btnCancelar: TButton;
+    procedure btnCancelarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmInsertDados: TfrmInsertDados;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmInsertDados.btnCancelarClick(Sender: TObject);
+begin
+  Close;
+end;
+
+end.

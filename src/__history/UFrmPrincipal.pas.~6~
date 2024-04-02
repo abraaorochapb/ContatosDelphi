@@ -1,0 +1,69 @@
+unit UFrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Data.DB,
+  Vcl.Grids, Vcl.DBGrids;
+
+type
+  TfrmPrincipal = class(TForm)
+    Panel1: TPanel;
+    Panel2: TPanel;
+    pnlBusca: TPanel;
+    btnNovo: TButton;
+    btnEditar: TButton;
+    btnExcluir: TButton;
+    DBGrid1: TDBGrid;
+    edtPesquisa: TEdit;
+    Label1: TLabel;
+    DataSource1: TDataSource;
+    procedure FormShow(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure AtualizaGrid;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+uses UDataModuleContatos, UFrmInsertDados;
+
+procedure TfrmPrincipal.btnNovoClick(Sender: TObject);
+begin
+  frmInsertDados.Caption := 'Dados Contato - Adicionar';
+  frmInsertDados.showmodal;
+  AtualizaGrid;
+end;
+
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+begin
+  with DM.qrySelect do
+    begin
+      active := false;
+      sql.Clear;
+      sql.Text := 'SELECT * FROM contatos';
+      active := true
+    end;
+end;
+
+procedure TfrmPrincipal.AtualizaGrid;
+begin
+  with DM.qrySelect do
+  begin
+    active := False;
+    sql.Clear;
+    sql.Text := 'SELECT * FROM contatos where name LIKE ' + quotedstr('%' + edtPesquisa.Text + '%');
+    active := True;
+  end;
+end;
+
+end.

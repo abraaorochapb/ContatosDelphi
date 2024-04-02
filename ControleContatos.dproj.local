@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2024/04/01 20:41:26.534,=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/01 20:42:03.438,C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\UFrmPrincipal.pas=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/01 20:42:03.438,C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\UFrmPrincipal.dfm=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/04/01 21:00:36.250,D:\ControleContatos\src\UFrmPrincipal.pas=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\UFrmPrincipal.pas</Transaction>
+    <Transaction>2024/04/01 21:00:36.250,D:\ControleContatos\src\UFrmPrincipal.dfm=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\UFrmPrincipal.dfm</Transaction>
+    <Transaction>2024/04/01 21:00:51.844,D:\ControleContatos\ControleContatos.dproj=C:\Users\2667V4\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/04/01 21:02:31.249,=D:\ControleContatos\Unit1.pas</Transaction>
+    <Transaction>2024/04/01 21:03:46.000,D:\ControleContatos\src\UFrmInsertDados.dfm=D:\ControleContatos\Unit1.dfm</Transaction>
+    <Transaction>2024/04/01 21:03:46.000,D:\ControleContatos\src\UFrmInsertDados.pas=D:\ControleContatos\Unit1.pas</Transaction>
+    <Transaction>2024/04/01 21:25:42.659,=D:\ControleContatos\Unit1.pas</Transaction>
+    <Transaction>2024/04/01 21:26:44.148,D:\ControleContatos\src\UDataModuleContatos.dfm=D:\ControleContatos\Unit1.dfm</Transaction>
+    <Transaction>2024/04/01 21:26:44.148,D:\ControleContatos\src\UDataModuleContatos.pas=D:\ControleContatos\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
